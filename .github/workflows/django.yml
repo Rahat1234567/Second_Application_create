@@ -11,7 +11,7 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-     - uses: actions/checkout@v3
-     - name: 'Build_My_App'
-       run:  docker build -t rahat_image.
+    - uses: actions/checkout@v3
+    - name: 'Build_My_App'
+      run:  docker build -t rahatimage -f dockerfile .
     
