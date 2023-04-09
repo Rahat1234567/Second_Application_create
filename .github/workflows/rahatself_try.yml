@@ -1,0 +1,13 @@
+name: selftry
+
+on: 
+  push:
+   branches: ["master"]
+
+jobs:
+   Rahtjob:
+    runs-on: ubuntu-latest #runner declare
+    steps:
+    - uses: actions/checkout@v3
+    - name: step name rahat
+      run: docker build .
