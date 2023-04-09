@@ -1,0 +1,17 @@
+name: Rahat Ullah
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  test_job:
+
+    runs-on: ubuntu-latest
+    steps:
+     - uses: actions/checkout@v3
+     - name: 'Build_My_App'
+       run:  docker build -t rahat_image.
+    
