@@ -1,16 +1,13 @@
-name: Rahat Ullah
-on:
+name: selftry
+
+on: 
   push:
-    branches: ["master"]
-  pull_request:
    branches: ["master"]
 
-
 jobs:
-   test:
-    runs-on: ubuntu-latest
+   Rahtjob:
+    runs-on: ubuntu-latest #runner declare
     steps:
-     - uses: actions/checkout@v3
-     - name: Build image
-       run: docker build .
-       
+    - uses: actions/checkout@v3
+    - name: step name rahat
+      run: docker build .
